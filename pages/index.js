@@ -13,21 +13,19 @@ export default function Home() {
       <main className="min-h-screen bg-gradient-to-b from-slate-900 to-slate-800 text-white flex flex-col items-center justify-center px-6 py-20 space-y-24">
         
         {/* Hero Section */}
-        <section
-            data-aos="fade-down"
-            className="text-center max-w-4xl space-y-8 py-20"
-        >
-          <h1 className="text-5xl font-extrabold tracking-tight leading-tight">
-            Unlock Your Best Tracks {" "}
-            <span className="text-indigo-400 whitespace-nowrap">Faster, Smarter, Together.</span>
-          </h1>
-          <p className="text-lg text-slate-300">
-            Meet your new creative partner: an AI assistant built to boost inspiration, streamline production, and help you finish more music — without losing your soul.
-          </p>
-          <button className="px-8 py-4 bg-indigo-500 hover:bg-indigo-600 transition transform hover:scale-105 rounded-full font-semibold shadow-lg">
-            🔥 Join the Early Access List
-          </button>
+        <section data-aos="fade-down" className="text-center max-w-4xl space-y-8 py-20">
+        <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
+        Unlock Your Best Tracks{" "}
+        <span className="text-indigo-400 whitespace-nowrap">Faster, Smarter, Together.</span>
+        </h1>
+        <p className="text-lg text-slate-300">
+        Meet your new creative partner: an AI assistant built to boost inspiration, streamline production, and help you finish more music — without losing your soul.
+        </p>
+        <button className="px-8 py-4 bg-indigo-500 hover:bg-indigo-600 transition transform hover:scale-105 rounded-full font-semibold shadow-lg">
+        🔥 Join the Early Access List
+        </button>
         </section>
+
 
         {/* Pain Point Section */}
         <section
