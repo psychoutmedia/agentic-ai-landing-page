@@ -1,115 +1,116 @@
-import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import Head from "next/head";
 
 export default function Home() {
   return (
-    <div
-      className={`${geistSans.className} ${geistMono.className} grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]`}
-    >
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              pages/index.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+    <>
+      <Head>
+        <title>Agentic AI Music — Unlock Your Best Tracks</title>
+        <meta name="description" content="Unlock your creative potential with Agentic AI — your ultimate music assistant. Create faster, smarter, and finish more tracks with ease." />
+        <link rel="icon" href="/favicon.ico" />
+        {/* Load Poppins font */}
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+      </Head>
+      <main className="min-h-screen bg-gradient-to-b from-slate-900 to-slate-800 text-white flex flex-col items-center justify-center px-6 py-20 space-y-24">
+        
+        {/* Hero Section */}
+        <section
+            data-aos="fade-down"
+            className="text-center max-w-4xl space-y-8 py-20"
+        >
+          <h1 className="text-5xl font-extrabold tracking-tight leading-tight">
+            Unlock Your Best Tracks {" "}
+            <span className="text-indigo-400 whitespace-nowrap">Faster, Smarter, Together.</span>
+          </h1>
+          <p className="text-lg text-slate-300">
+            Meet your new creative partner: an AI assistant built to boost inspiration, streamline production, and help you finish more music — without losing your soul.
+          </p>
+          <button className="px-8 py-4 bg-indigo-500 hover:bg-indigo-600 transition transform hover:scale-105 rounded-full font-semibold shadow-lg">
+            🔥 Join the Early Access List
+          </button>
+        </section>
+
+        {/* Pain Point Section */}
+        <section
+            data-aos="fade-up"
+            className="bg-white/5 backdrop-blur-md rounded-2xl p-8 max-w-3xl text-center shadow-lg py-20"
+        >
+          <h2 className="text-3xl font-bold mb-4">Making Music Shouldn't Feel This Overwhelming</h2>
+          <p className="text-slate-300">
+            If you're stuck in creative ruts, battling complex software, or spending hours tweaking tiny details, you're not alone. Most independent musicians hit the same wall — and too many great ideas die unfinished. There's a better way.
+          </p>
+        </section>
+
+        {/* Features Section */}
+        <section
+            data-aos="fade-up"
+            className="bg-white/5 backdrop-blur-md rounded-2xl p-8 max-w-3xl text-center shadow-lg py-20 space-y-4"
+        >
+        <h2 className="text-3xl font-bold mb-6">
+  Your Personal Creative Wingman,
+  <br />
+  <span className="text-indigo-400 text-4xl block mt-2">Inside Your DAW</span>
+</h2>
+<div className="mx-auto max-w-md">
+  <ul className="space-y-3 text-left">
+    <li>🎼 <span className="font-semibold">Generate melodies, chords, and structures on demand</span></li>
+    <li>⚙️ <span className="font-semibold">Get real-time production tips — right as you work</span></li>
+    <li>⚡ <span className="font-semibold">Automate the hard stuff: mixing, leveling, organization</span></li>
+    <li>🏁 <span className="font-semibold">Finish more tracks, faster, and sound better doing it</span></li>
+  </ul>
+</div>
+
+          <p className="mt-6 text-slate-400 text-sm">
+            This isn’t a robot making music for you. It’s a creative amplifier — tuned to your vision, your style, your flow.
+          </p>
+        </section>
+
+        {/* How It Works */}
+        <section
+            data-aos="fade-up"
+            className="bg-white/5 backdrop-blur-md rounded-2xl p-8 max-w-3xl text-center shadow-lg py-20 space-y-4"
+        >
+          <h2 className="text-3xl font-bold mb-6">How It Works</h2>
+          <ol className="list-decimal list-inside text-left space-y-2">
+            <li><span className="font-bold">Talk to Your AI:</span> Describe the vibe or idea you're chasing — in plain English.</li>
+            <li><span className="font-bold">Watch It Assist:</span> Get instant musical ideas, arrangement templates, and production fixes.</li>
+            <li><span className="font-bold">Stay In Control:</span> Accept, tweak, or reject suggestions at any time. You stay the artist. It stays the assistant.</li>
+          </ol>
+        </section>
+
+        {/* Early Access CTA */}
+        <section
+            data-aos="fade-up"
+            className="text-center max-w-4xl space-y-6 py-20"
+        >
+
+          <h2 className="text-3xl font-bold mb-4">Built for Musicians. Shaped by Musicians.</h2>
+          <p className="text-slate-300">
+            Our Early Access members aren’t just beta testers — they’re co-creators. Sign up now to:
+          </p>
+          <ul className="list-disc list-inside space-y-2 text-left mx-auto max-w-md">
+            <li>✅ Be the first to try the AI Assistant Plugin</li>
+            <li>✅ Help shape the features and future</li>
+            <li>✅ Get exclusive lifetime perks</li>
+          </ul>
+          <button className="mt-6 px-8 py-4 bg-pink-500 hover:bg-pink-600 transition transform hover:scale-105 rounded-full font-semibold shadow-lg">
+            🚀 Get Early Access
+          </button>
+        </section>
+
+        {/* Footer */}
+        <footer
+            data-aos="fade-up"
+            className="pt-20 text-center text-sm text-slate-500"
+        >
+          <p>© 2025 AgenticAI Music. All rights reserved.</p>
+          <div className="flex justify-center space-x-4 mt-2">
+            <a href="#" className="hover:underline">Privacy Policy</a>
+            <a href="#" className="hover:underline">Terms of Service</a>
+            <a href="#" className="hover:underline">Contact</a>
+          </div>
+        </footer>
+
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+    </>
   );
 }
