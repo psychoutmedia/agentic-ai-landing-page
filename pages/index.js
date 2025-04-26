@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { motion } from "framer-motion";
 
 
 export default function Home() {
@@ -11,10 +12,10 @@ export default function Home() {
         {/* Load Poppins font */}
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
       </Head>
-      <main className="min-h-screen bg-gradient-to-b from-slate-900 to-slate-800 text-white flex flex-col items-center justify-center px-6 py-20 space-y-24">
+      <main className="min-h-screen bg-gradient-to-b from-slate-900 to-slate-800 text-white flex flex-col items-center justify-center px-6 py-12 space-y-24">
         
         {/* Hero Section */}
-        <section data-aos="fade-down" className="text-center max-w-4xl space-y-8 py-20">
+        <section data-aos="fade-down" className="text-center max-w-4xl space-y-8 py-12">
         <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
         Unlock Your Best Tracks{" "}
         <span className="text-indigo-400 whitespace-nowrap">Faster, Smarter, Together.</span>
@@ -22,16 +23,46 @@ export default function Home() {
         <p className="text-lg text-slate-300">
         Meet your new creative partner: an AI assistant built to boost inspiration, streamline production, and help you finish more music — without losing your soul.
         </p>
-        <button className="px-8 py-4 bg-indigo-500 hover:bg-indigo-600 transition transform hover:scale-105 rounded-full font-semibold shadow-lg">
-        🔥 Join the Early Access List
-        </button>
+        
         </section>
+        {/* Early Access Form */}
+<section className="mt-12 bg-white/5 backdrop-blur-md rounded-2xl p-8 max-w-xl mx-auto text-center shadow-lg" data-aos="fade-up">
+  <h3 className="text-2xl font-bold mb-4">Sign Up for Early Access</h3>
+  <p className="text-slate-300 mb-6">Be among the first to experience the future of music production.</p>
+
+  <form
+    action="https://formspree.io/f/xeogolqk"
+    method="POST"
+    className="space-y-4"
+  >
+    <input type="hidden" name="_redirect" value="https://vibeproducer.com/thank-you" />
+    <input
+      type="text"
+      name="name"
+      placeholder="Your Name (optional)"
+      className="w-full p-3 rounded-lg bg-slate-800 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-pink-500"
+    />
+    <input
+      type="email"
+      name="email"
+      required
+      placeholder="Your Email Address"
+      className="w-full p-3 rounded-lg bg-slate-800 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+    />
+    <button
+      type="submit"
+      className="w-full py-3 bg-indigo-500 hover:bg-indigo-600 transition transform hover:scale-105 rounded-lg font-semibold shadow-md"
+    >
+      🎶 Join the Vibe Early Access
+    </button>
+  </form>
+</section>
 
 
         {/* Pain Point Section */}
         <section
             data-aos="fade-up"
-            className="bg-white/5 backdrop-blur-md rounded-2xl p-8 max-w-3xl text-center shadow-lg py-20"
+            className="bg-white/5 backdrop-blur-md rounded-2xl p-8 max-w-3xl text-center shadow-lg py-12"
         >
           <h2 className="text-3xl font-bold mb-4">Making Music Shouldn&apos;t Feel This Overwhelming</h2>
           <p className="text-slate-300">
@@ -42,7 +73,7 @@ export default function Home() {
         {/* Features Section */}
         <section
             data-aos="fade-up"
-            className="bg-white/5 backdrop-blur-md rounded-2xl p-8 max-w-3xl text-center shadow-lg py-20 space-y-4"
+            className="bg-white/5 backdrop-blur-md rounded-2xl p-8 max-w-3xl text-center shadow-lg py-12 space-y-4"
         >
         <h2 className="text-3xl font-bold mb-6">
   Your Personal Creative Wingman,
@@ -66,40 +97,107 @@ export default function Home() {
         {/* How It Works */}
         <section
             data-aos="fade-up"
-            className="bg-white/5 backdrop-blur-md rounded-2xl p-8 max-w-3xl text-center shadow-lg py-20 space-y-4"
+            className="bg-white/5 backdrop-blur-md rounded-2xl p-8 max-w-3xl text-center shadow-lg py-12 space-y-4"
         >
           <h2 className="text-3xl font-bold mb-6">How It Works</h2>
-          <ol className="list-decimal list-inside text-left space-y-2">
-            <li><span className="font-bold">Talk to Your AI:</span> Describe the vibe or idea you&apos;re chasing — in plain English.</li>
-            <li><span className="font-bold">Watch It Assist:</span> Get instant musical ideas, arrangement templates, and production fixes.</li>
-            <li><span className="font-bold">Stay In Control:</span> Accept, tweak, or reject suggestions at any time. You stay the artist. It stays the assistant.</li>
-          </ol>
+          <ol className="list-decimal list-inside text-left space-y-6">
+  <li className="flex items-start space-x-2">
+  <motion.div
+  initial={{ opacity: 0.7, scale: 1 }}
+  animate={{ opacity: [0.7, 1, 0.7], scale: [1, 1.1, 1] }}
+  transition={{
+    duration: 3,
+    repeat: Infinity,
+    repeatType: "loop",
+    ease: "easeInOut",
+  }}
+  whileHover={{ scale: 1.3 }}
+  className="text-2xl p-2 rounded-full bg-indigo-500/10 hover:bg-indigo-500/20"
+>
+  🧠
+</motion.div>
+    <div>
+      <span className="font-bold text-indigo-400">Talk to Your AI:</span> 
+      <span className="text-slate-300"> Describe the vibe or idea you&apos;re chasing — in plain English.</span>
+    </div>
+  </li>
+
+  <li className="flex items-start space-x-2">
+  <motion.div
+  initial={{ opacity: 0.7, scale: 1 }}
+  animate={{ opacity: [0.7, 1, 0.7], scale: [1, 1.1, 1] }}
+  transition={{
+    duration: 3,
+    repeat: Infinity,
+    repeatType: "loop",
+    ease: "easeInOut",
+  }}
+  whileHover={{ scale: 1.3 }}
+  className="text-2xl p-2 rounded-full bg-indigo-500/10 hover:bg-indigo-500/20"
+>
+⚡
+</motion.div>
+    <div>
+      <span className="font-bold text-indigo-400">Watch It Assist:</span> 
+      <span className="text-slate-300"> Get instant musical ideas, arrangement templates, and production fixes.</span>
+    </div>
+  </li>
+
+  <li className="flex items-start space-x-2">
+  <motion.div
+  initial={{ opacity: 0.7, scale: 1 }}
+  animate={{ opacity: [0.7, 1, 0.7], scale: [1, 1.1, 1] }}
+  transition={{
+    duration: 3,
+    repeat: Infinity,
+    repeatType: "loop",
+    ease: "easeInOut",
+  }}
+  whileHover={{ scale: 1.3 }}
+  className="text-2xl p-2 rounded-full bg-indigo-500/10 hover:bg-indigo-500/20"
+>
+🎯
+</motion.div>
+    <div>
+      <span className="font-bold text-indigo-400">Stay In Control:</span> 
+      <span className="text-slate-300"> Accept, tweak, or reject suggestions at any time. You stay the artist. It stays the assistant.</span>
+    </div>
+  </li>
+</ol>
+
+
         </section>
 
-        {/* Early Access CTA */}
+        {/* Built for Musicians */}
         <section
-            data-aos="fade-up"
-            className="text-center max-w-4xl space-y-6 py-20"
-        >
+  data-aos="fade-up"
+  className="bg-white/5 backdrop-blur-md rounded-2xl p-8 max-w-3xl text-center shadow-lg py-12 space-y-6"
+>
+  <h2 className="text-3xl font-bold mb-6">
+    Built for Musicians. Shaped by Musicians.
+  </h2>
 
-          <h2 className="text-3xl font-bold mb-4">Built for Musicians. Shaped by Musicians.</h2>
-          <p className="text-slate-300">
-            Our Early Access members aren&apos;t just beta testers — they&apos;re co-creators. Sign up now to:
-          </p>
-          <ul className="list-disc list-inside space-y-2 text-left mx-auto max-w-md">
-            <li>✅ Be the first to try the AI Assistant Plugin</li>
-            <li>✅ Help shape the features and future</li>
-            <li>✅ Get exclusive lifetime perks</li>
-          </ul>
-          <button className="mt-6 px-8 py-4 bg-pink-500 hover:bg-pink-600 transition transform hover:scale-105 rounded-full font-semibold shadow-lg">
-            🚀 Get Early Access
-          </button>
-        </section>
+  <div className="space-y-4">
+    <p className="text-slate-300">
+      Our Early Access members aren&apos;t just beta testers — they&apos;re co-creators.
+    </p>
+    <p className="text-slate-300 font-semibold">
+      Here’s what you&apos;ll get as an Early Access member:
+    </p>
+  </div>
+
+  <ul className="list-disc list-inside space-y-2 text-left mx-auto max-w-md pt-6">
+    <li>✅ Be the first to try the AI Assistant Plugin</li>
+    <li>✅ Help shape the features and future</li>
+    <li>✅ Get exclusive lifetime perks</li>
+  </ul>
+</section>
+
 
         {/* Footer */}
         <footer
             data-aos="fade-up"
-            className="pt-20 text-center text-sm text-slate-500"
+            className="pt-12 text-center text-sm text-slate-500"
         >
           <p>© 2025 AgenticAI Music. All rights reserved.</p>
           <div className="flex justify-center space-x-4 mt-2">
