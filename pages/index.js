@@ -31,10 +31,15 @@ export default function Home() {
   <p className="text-slate-300 mb-6">Be among the first to experience the future of music production.</p>
 
   <form
-    action="https://formspree.io/f/xeogolqk"
-    method="POST"
-    className="space-y-4"
-  >
+  action="https://formspree.io/f/xeogolqk"
+  method="POST"
+  className="space-y-4"
+  onSubmit={(e) => {
+    setTimeout(() => {
+      window.location.href = "https://vibeproducer.com/thank-you";
+    }, 500);
+  }}
+>
     <input type="hidden" name="_redirect" value="https://vibeproducer.com/thank-you" />
     <input
       type="text"
