@@ -6,34 +6,21 @@ export default function Home() {
   return (
     <>
       <Head>
-  <title>Vibe Producer — Unlock Your Best Tracks with AI</title>
-  <meta name="description" content="Meet your new AI-powered creative partner inside your DAW. Vibe Producer helps you create faster, smarter, and finish more music with soul. Join Early Access now." />
-  
-  {/* Open Graph / Facebook */}
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://vibeproducer.com/" />
-  <meta property="og:title" content="Vibe Producer — Unlock Your Best Tracks with AI" />
-  <meta property="og:description" content="Meet your new AI-powered creative partner inside your DAW. Create faster, smarter, and finish more music with Vibe Producer." />
-  <meta property="og:image" content="https://vibeproducer.com/og-image.png" />
+  <title>Vibe Producer — Unlock Your Best Tracks</title>
+  <meta name="description" content="Join the next evolution of music creation. All that feels like magic." />
   <meta property="og:title" content="Vibe Producer — Unlock Your Best Tracks" />
-<meta property="og:description" content="Join the next evolution of music creation. AI that feels like magic." />
-<meta property="og:image" content="/images/Vibe_Producer.png" />
-<meta property="og:url" content="https://vibeproducer.com" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary_large_image" />
-
-
-  {/* Twitter */}
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://vibeproducer.com/" />
-  <meta property="twitter:title" content="Vibe Producer — Unlock Your Best Tracks with AI" />
-  <meta property="twitter:description" content="Meet your new AI-powered creative partner inside your DAW. Create faster, smarter, and finish more music with Vibe Producer." />
-  <meta property="twitter:image" content="https://vibeproducer.com/og-image.png" />
-
-  {/* Favicon already loaded */}
-  <link rel="icon" href="/images/Vibe_Producer.png" type="image/png" />
+  <meta property="og:description" content="Join the next evolution of music creation. All that feels like magic." />
+  <meta property="og:url" content="https://vibeproducer.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://vibeproducer.com/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Vibe Producer — Unlock Your Best Tracks" />
+  <meta name="twitter:description" content="Join the next evolution of music creation. All that feels like magic." />
+  <meta name="twitter:image" content="https://vibeproducer.com/og-image.png" />
+  <link rel="icon" href="/favicon.ico" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
 </Head>
+
 
       <main className="min-h-screen bg-gradient-to-b from-slate-900 to-slate-800 text-white flex flex-col items-center justify-center px-6 py-12 space-y-24">
         
