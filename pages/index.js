@@ -34,9 +34,9 @@ export default function Home() {
             data-aos="fade-up"
             className="bg-white/5 backdrop-blur-md rounded-2xl p-8 max-w-3xl text-center shadow-lg py-20"
         >
-          <h2 className="text-3xl font-bold mb-4">Making Music Shouldn't Feel This Overwhelming</h2>
+          <h2 className="text-3xl font-bold mb-4">Making Music Shouldn&apos;t Feel This Overwhelming</h2>
           <p className="text-slate-300">
-            If you're stuck in creative ruts, battling complex software, or spending hours tweaking tiny details, you're not alone. Most independent musicians hit the same wall — and too many great ideas die unfinished. There's a better way.
+            If you&apos;re stuck in creative ruts, battling complex software, or spending hours tweaking tiny details, you&apos;re not alone. Most independent musicians hit the same wall — and too many great ideas die unfinished. There&apos;s a better way.
           </p>
         </section>
 
@@ -60,7 +60,7 @@ export default function Home() {
 </div>
 
           <p className="mt-6 text-slate-400 text-sm">
-            This isn’t a robot making music for you. It’s a creative amplifier — tuned to your vision, your style, your flow.
+            This isn&apos;t a robot making music for you. It&apos;s a creative amplifier — tuned to your vision, your style, your flow.
           </p>
         </section>
 
@@ -71,7 +71,7 @@ export default function Home() {
         >
           <h2 className="text-3xl font-bold mb-6">How It Works</h2>
           <ol className="list-decimal list-inside text-left space-y-2">
-            <li><span className="font-bold">Talk to Your AI:</span> Describe the vibe or idea you're chasing — in plain English.</li>
+            <li><span className="font-bold">Talk to Your AI:</span> Describe the vibe or idea you&apos;re chasing — in plain English.</li>
             <li><span className="font-bold">Watch It Assist:</span> Get instant musical ideas, arrangement templates, and production fixes.</li>
             <li><span className="font-bold">Stay In Control:</span> Accept, tweak, or reject suggestions at any time. You stay the artist. It stays the assistant.</li>
           </ol>
@@ -85,7 +85,7 @@ export default function Home() {
 
           <h2 className="text-3xl font-bold mb-4">Built for Musicians. Shaped by Musicians.</h2>
           <p className="text-slate-300">
-            Our Early Access members aren’t just beta testers — they’re co-creators. Sign up now to:
+            Our Early Access members aren&apos;t just beta testers — they&apos;re co-creators. Sign up now to:
           </p>
           <ul className="list-disc list-inside space-y-2 text-left mx-auto max-w-md">
             <li>✅ Be the first to try the AI Assistant Plugin</li>
