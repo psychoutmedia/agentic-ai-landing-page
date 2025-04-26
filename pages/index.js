@@ -7,16 +7,16 @@ export default function Home() {
     <>
       <Head>
   <title>Vibe Producer — Unlock Your Best Tracks</title>
-  <meta name="description" content="Join the next evolution of music creation. All that feels like magic." />
+  <meta name="description" content="Join the next evolution of music creation. AI that feels like magic." />
   <meta property="og:title" content="Vibe Producer — Unlock Your Best Tracks" />
   <meta property="og:description" content="Join the next evolution of music creation. All that feels like magic." />
   <meta property="og:url" content="https://vibeproducer.com" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://vibeproducer.com/og-image.png" />
+  <meta property="og:image" content="https://vibeproducer.com/images/Vibe_Producer.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Vibe Producer — Unlock Your Best Tracks" />
   <meta name="twitter:description" content="Join the next evolution of music creation. All that feels like magic." />
-  <meta name="twitter:image" content="https://vibeproducer.com/og-image.png" />
+  <meta name="twitter:image" content="https://vibeproducer.com/images/Vibe_Producer.png" />
   <link rel="icon" href="/favicon.ico" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
 </Head>
