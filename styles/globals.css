@@ -13,18 +13,18 @@
   }
 }
 
-html, body {
-  height: 100%;
-  min-height: 100%;
-  overflow-x: hidden;
+html {
+  background: var(--background);
   scroll-behavior: smooth;
-  overscroll-behavior-y: none;
+  overflow-x: hidden;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
   background: var(--background);
   color: var(--foreground);
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* Logo Styling */
@@ -32,7 +32,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1rem 0 1rem 0;
+  margin: -20px 0 10px 0;
   padding: 0;
 }
 
@@ -43,6 +43,7 @@ body {
   opacity: 0;
   animation: fadeIn 1s ease forwards, pulseGlow 5s infinite ease-in-out;
   transition: transform 0.3s ease;
+  will-change: transform;
 }
 
 .landing-logo:hover {
@@ -51,17 +52,17 @@ body {
 
 @media screen and (max-width: 640px) {
   .landing-logo {
-    width: 180px;
+    width: 180px; /* increased from 140px for mobile impact */
     max-width: 80%;
     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.08));
   }
 
   .logo-wrapper {
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
+    margin-top: 0.5rem; /* increased space above the logo on mobile */
   }
 }
 
+/* Animations */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
