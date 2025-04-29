@@ -55,8 +55,8 @@ body {
   }
 
   .logo-wrapper {
-    margin: -6px 0 8px 0; /* increase vertical margin for better spacing */
-    margin-top: 1rem; /* or 0.5rem for tighter fit */
+    
+    margin-top: 0.5rem; /* or 0.5rem for tighter fit */
   }
 }
 
