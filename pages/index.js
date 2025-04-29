@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/image"; // Import next/image
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 import AOS from "aos";
@@ -9,11 +9,15 @@ export default function Home() {
   useEffect(() => {
     if (typeof window !== "undefined") {
       console.log("%c🚀 Welcome to Vibe Producer!", "color: #6366f1; font-weight: bold;");
+      console.log("Initializing AOS...");
       AOS.init({
         once: true, // Animations run only once
         duration: 800,
         easing: "ease-out",
+        disable: "mobile", // Disable AOS on mobile to avoid rendering issues
+        offset: 100, // Trigger animations earlier
       });
+      console.log("AOS initialized");
     }
   }, []);
 
@@ -50,9 +54,9 @@ export default function Home() {
             src="/vibe-logo-transparent.png"
             alt="Vibe Producer Logo"
             className="landing-logo"
-            width={200} // Specify width for optimization
-            height={200} // Adjust height based on your logo’s aspect ratio
-            priority // Load eagerly since it’s above the fold
+            width={200}
+            height={200} // Adjust based on your logo’s aspect ratio
+            priority
           />
         </div>
 
