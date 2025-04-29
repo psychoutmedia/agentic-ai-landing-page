@@ -90,7 +90,7 @@ export default function Home() {
         >
           <h2 className="text-3xl font-bold mb-4">Making Music Shouldn&apos;t Feel This Overwhelming</h2>
           <p className="text-slate-300">
-            If you&apos;re stuck in creative ruts, battling complex software, or spending hours tweaking tiny details, you're not alone. Most independent musicians hit the same wall — and too many great ideas die unfinished. There&apos;s a better way.
+            If you&apos;re stuck in creative ruts, battling complex software, or spending hours tweaking tiny details, you&apos;re not alone. Most independent musicians hit the same wall — and too many great ideas die unfinished. There&apos;s a better way.
           </p>
         </section>
 
@@ -197,7 +197,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-6">Built for Musicians. Shaped by Musicians.</h2>
           <div className="space-y-4">
             <p className="text-slate-300">Our Early Access members aren&apos;t just beta testers — they&apos;re co-creators.</p>
-            <p className="text-slate-300 font-semibold">Here’s what you&apos;ll get as an Early Access member:</p>
+            <p className="text-slate-300 font-semibold">Here&apos;s what you&apos;ll get as an Early Access member:</p>
           </div>
           <ul className="list-disc list-inside space-y-2 text-left mx-auto max-w-md pt-6">
             <li>✅ Be the first to try the AI Assistant Plugin</li>
