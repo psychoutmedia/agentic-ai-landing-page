@@ -4,8 +4,11 @@ import { motion } from "framer-motion";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useRouter } from "next/router"; // Import useRouter for redirection
 
 export default function Home() {
+  const router = useRouter(); // Initialize router for client-side redirect
+
   useEffect(() => {
     if (typeof window !== "undefined") {
       console.log("%c🚀 Welcome to Vibe Producer!", "color: #6366f1; font-weight: bold;");
@@ -21,6 +24,36 @@ export default function Home() {
       console.log("Footer should render below 'Built for Musicians' section");
     }
   }, []);
+
+  // Handle form submission
+  const handleSubmit = async (event) => {
+    event.preventDefault(); // Prevent default form submission
+
+    const form = event.target;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        // On successful submission, redirect to /thank-you
+        router.push("/thank-you");
+      } else {
+        console.error("Form submission failed:", response.statusText);
+        // Optionally show an error message to the user
+        alert("There was an error submitting the form. Please try again.");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      alert("There was an error submitting the form. Please try again.");
+    }
+  };
 
   return (
     <>
@@ -66,8 +99,12 @@ export default function Home() {
           <h3 className="text-2xl font-bold mb-4">Sign Up for Early Access</h3>
           <p className="text-slate-300 mb-6">Be among the first to experience the future of music production.</p>
 
-          <form action="https://formspree.io/f/xeogolqk" method="POST" className="space-y-4">
-            <input type="hidden" name="_redirect" value="https://vibeproducer.com/thank-you" />
+          <form
+            action="https://formspree.io/f/xeogolqk"
+            method="POST"
+            className="space-y-4"
+            onSubmit={handleSubmit} // Add onSubmit handler
+          >
             <input
               type="text"
               name="name"
