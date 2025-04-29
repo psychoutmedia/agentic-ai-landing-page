@@ -2,58 +2,49 @@ import Head from "next/head";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 
-
 export default function Home() {
   useEffect(() => {
     if (typeof window !== "undefined") {
       console.log("%c🚀 Welcome to Vibe Producer!", "color: #6366f1; font-weight: bold;");
     }
   }, []);
+
   return (
     <>
       <Head>
-  <title>Vibe Producer — Unlock Your Best Tracks</title>
-  <meta name="description" content="Join the next evolution of music creation. AI that feels like magic." />
-  <meta name="color-scheme" content="dark light"></meta>
-  <meta property="og:title" content="Vibe Producer — Unlock Your Best Tracks" />
-  <meta property="og:description" content="Join the next evolution of music creation. AI that feels like magic." />
-  <meta property="og:url" content="https://vibeproducer.com" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://vibeproducer.com/Vibe_Producer.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Vibe Producer — Unlock Your Best Tracks" />
-  <meta name="twitter:description" content="Join the next evolution of music creation. AI that feels like magic." />
-  <meta name="twitter:image" content="https://vibeproducer.com/Vibe_Producer.png" />
-  <link rel="icon" href="/favicon.ico" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-</Head>
+        <title>Vibe Producer — Unlock Your Best Tracks</title>
+        <meta name="description" content="Join the next evolution of music creation. AI that feels like magic." />
+        <meta name="color-scheme" content="dark light"></meta>
+        <meta property="og:title" content="Vibe Producer — Unlock Your Best Tracks" />
+        <meta property="og:description" content="Join the next evolution of music creation. AI that feels like magic." />
+        <meta property="og:url" content="https://vibeproducer.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://vibeproducer.com/Vibe_Producer.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Vibe Producer — Unlock Your Best Tracks" />
+        <meta name="twitter:description" content="Join the next evolution of music creation. AI that feels like magic." />
+        <meta name="twitter:image" content="https://vibeproducer.com/Vibe_Producer.png" />
+        <link rel="icon" href="/favicon.ico" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+      </Head>
 
-
-<main className="min-h-[100dvh] overflow-x-hidden overflow-y-auto text-white flex flex-col items-center justify-start px-6 pt-12 space-y-16">
-
-
-        
-        {/* Hero Section */}
-        <section data-aos="fade-down" className="text-center max-w-4xl space-y-8 py-12 px-4 sm:px-6 ">
-        <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
-        Unlock Your Best Tracks{" "}
-        <span className="block text-indigo-400">
-  Faster, Smarter, Together.
-</span>
-        </h1>
-        <p className="text-lg text-slate-300">
-        Meet your new creative partner: an AI assistant built to boost inspiration, streamline production, and help you finish more music — without losing your soul.
-        </p>
+      <main className="min-h-screen w-full overflow-x-hidden overflow-y-auto text-white flex flex-col items-center justify-start px-4 pt-12 space-y-16">
+        <section data-aos="fade-down" className="text-center w-full max-w-4xl space-y-8 py-12 px-4 sm:px-6">
+          <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
+            Unlock Your Best Tracks <span className="block text-indigo-400">Faster, Smarter, Together.</span>
+          </h1>
+          <p className="text-lg text-slate-300">
+            Meet your new creative partner: an AI assistant built to boost inspiration, streamline production, and help you finish more music — without losing your soul.
+          </p>
         </section>
 
-        {/* Logo Divider */}
         <div className="logo-wrapper" data-aos="fade-up">
-  <img
-    src="/vibe-logo-transparent.png"
-    alt="Vibe Producer Logo"
-    className="landing-logo"
-  />
-</div>
+          <img
+            src="/vibe-logo-transparent.png"
+            alt="Vibe Producer Logo"
+            className="landing-logo"
+          />
+        </div>
 
 
         {/* Early Access Form */}
