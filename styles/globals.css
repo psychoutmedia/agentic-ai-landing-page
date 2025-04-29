@@ -18,24 +18,20 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   font-family: 'Poppins', sans-serif;
   background: var(--background);
   color: var(--foreground);
-  overflow-x: hidden; /* ✅ No vertical overflow */
-  
-}
-body{
+  overflow-x: hidden;
   overflow-y: auto;
 }
 
-/* Fix for mobile Safari double scroll */
 main {
+  flex: 1;
   display: flex;
   flex-direction: column;
   width: 100%;
-  overflow-x: hidden;
-  overflow-y: visible;
+  overflow: visible;
   position: relative;
 }
 
