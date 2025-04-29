@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 @import "tailwindcss";
 
+/* Universal Box Sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -16,25 +21,24 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
   width: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
+  font-family: 'Poppins', sans-serif;
+  overscroll-behavior-y: contain;
   background: var(--background);
   color: var(--foreground);
-  font-family: 'Poppins', sans-serif;
 }
 
 main {
-  min-height: 100vh;
+  min-height: 100dvh;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
-
 
 /* Logo Styling */
 .logo-wrapper {
@@ -61,13 +65,13 @@ main {
 
 @media screen and (max-width: 640px) {
   .landing-logo {
-    width: 180px; /* increased from 140px for mobile impact */
+    width: 180px;
     max-width: 80%;
     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.08));
   }
 
   .logo-wrapper {
-    margin-top: 0.5rem; /* increased space above the logo on mobile */
+    margin-top: 0.5rem;
   }
 }
 

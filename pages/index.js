@@ -29,7 +29,7 @@ export default function Home() {
 </Head>
 
 
-<main className="min-h-screen bg-gradient-to-b from-slate-900 to-slate-800 text-white flex flex-col items-center justify-start px-6 pt-12 space-y-16">
+<main className="w-full bg-gradient-to-b from-slate-900 to-slate-800 text-white flex flex-col items-center px-4 pt-10 space-y-14 overflow-x-hidden">
 
 
         
