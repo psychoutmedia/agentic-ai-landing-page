@@ -30,9 +30,10 @@ body {
 
 #__next {
   width: 100%;
-  min-height: 100vh; /* Allow content to expand beyond viewport */
+  min-height: 100vh; /* Allow content to expand */
   display: flex;
   flex-direction: column;
+  overflow: hidden; /* Prevent #__next from scrolling */
 }
 
 main {
@@ -41,6 +42,11 @@ main {
   display: flex;
   flex-direction: column;
   overflow: visible; /* Ensure main doesn’t clip content */
+}
+
+/* Ensure sections don’t trigger scrollbars */
+section, footer {
+  overflow: visible;
 }
 
 /* Responsive padding for mobile */
@@ -78,7 +84,7 @@ html::-webkit-scrollbar-thumb:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0; /* Simplify margins */
+  margin: 0;
   padding: 0;
 }
 
