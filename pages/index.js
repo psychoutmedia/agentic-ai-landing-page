@@ -29,14 +29,16 @@ export default function Home() {
 </Head>
 
 
-<main className="min-h-screen bg-gradient-to-b from-slate-900 to-slate-800 text-white flex flex-col items-center justify-center px-4 sm:px-6 py-12 overflow-x-hidden space-y-24">
+<main className="min-h-screen bg-gradient-to-b from-slate-900 to-slate-800 text-white flex flex-col items-center justify-center px-4 sm:px-6 py-12 overflow-x-hidden space-y-18">
 
         
         {/* Hero Section */}
         <section data-aos="fade-down" className="text-center max-w-4xl space-y-8 py-12 px-4 sm:px-6 ">
         <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
         Unlock Your Best Tracks{" "}
-        <span className="text-indigo-400">Faster, Smarter, Together.</span>
+        <span className="block text-indigo-400">
+  Faster, Smarter, Together.
+</span>
         </h1>
         <p className="text-lg text-slate-300">
         Meet your new creative partner: an AI assistant built to boost inspiration, streamline production, and help you finish more music — without losing your soul.
