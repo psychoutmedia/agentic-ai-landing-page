@@ -60,21 +60,12 @@ footer {
 /* Responsive adjustments for mobile */
 @media screen and (max-width: 640px) {
   main {
-    padding-top: 1.5rem; /* Reduced from 2rem to bring content up */
     padding-left: 1rem;
     padding-right: 1rem;
   }
-  /* Reduce padding for the hero section on mobile */
-  main > section:first-child {
-    padding-top: 1.5rem; /* Reduced from pt-12 (3rem) to 1.5rem */
-    padding-bottom: 1.5rem; /* Reduced from py-10 (2.5rem) */
-  }
-  .space-y-16 > :not([hidden]) ~ :not([hidden]) {
-    margin-top: 4rem; /* Reduce spacing on mobile */
-  }
   .logo-wrapper {
-    margin-top: 0; /* Remove top margin to bring logo up */
-    margin-bottom: 1rem; /* Keep some space below logo */
+    margin-top: 0; /* Ensure no top margin */
+    margin-bottom: 0.5rem; /* Reduced from 1rem to bring Early Access closer */
   }
   footer {
     padding-bottom: 4rem; /* More space on mobile */

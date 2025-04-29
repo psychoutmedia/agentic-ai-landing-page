@@ -40,8 +40,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="w-full flex flex-col items-center justify-start px-4 pt-12 space-y-16">
-        <section data-aos="fade-down" className="text-center w-full max-w-4xl space-y-6 py-10 px-4 sm:px-6">
+      <main className="w-full flex flex-col items-center justify-start px-4 pt-6 sm:pt-12 space-y-8 sm:space-y-16">
+        <section data-aos="fade-down" className="text-center w-full max-w-4xl space-y-4 sm:space-y-6 py-6 sm:py-10 px-4 sm:px-6">
           <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
             Unlock Your Best Tracks <span className="block text-indigo-400">Faster, Smarter, Together.</span>
           </h1>
@@ -62,7 +62,7 @@ export default function Home() {
         </div>
 
         {/* Early Access Form */}
-        <section className="mt-12 bg-white/5 backdrop-blur-md rounded-2xl p-8 max-w-xl mx-auto text-center shadow-lg" data-aos="fade-up">
+        <section className="mt-8 sm:mt-12 bg-white/5 backdrop-blur-md rounded-2xl p-8 max-w-xl mx-auto text-center shadow-lg" data-aos="fade-up">
           <h3 className="text-2xl font-bold mb-4">Sign Up for Early Access</h3>
           <p className="text-slate-300 mb-6">Be among the first to experience the future of music production.</p>
 
