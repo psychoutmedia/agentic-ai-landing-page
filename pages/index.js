@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image"; // Import next/image
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 import AOS from "aos";
@@ -32,8 +33,6 @@ export default function Home() {
         <meta name="twitter:description" content="Join the next evolution of music creation. AI that feels like magic." />
         <meta name="twitter:image" content="https://vibeproducer.com/Vibe_Producer.png" />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" as="style" />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
       </Head>
 
       <main className="w-full flex flex-col items-center justify-start px-4 pt-12 space-y-16">
@@ -47,10 +46,13 @@ export default function Home() {
         </section>
 
         <div className="logo-wrapper" data-aos="fade-up">
-          <img
+          <Image
             src="/vibe-logo-transparent.png"
             alt="Vibe Producer Logo"
             className="landing-logo"
+            width={200} // Specify width for optimization
+            height={200} // Adjust height based on your logo’s aspect ratio
+            priority // Load eagerly since it’s above the fold
           />
         </div>
 
@@ -78,7 +80,7 @@ export default function Home() {
               type="submit"
               className="w-full py-3 bg-indigo-500 hover:bg-indigo-600 transition transform hover:scale-105 rounded-lg font-semibold shadow-md"
             >
-              🎶 Join the Vibe Early Access
+              🎶 Join Vibe Early Access
             </button>
           </form>
         </section>
@@ -88,9 +90,9 @@ export default function Home() {
           data-aos="fade-up"
           className="bg-white/5 backdrop-blur-md rounded-2xl p-8 max-w-3xl text-center shadow-lg py-12"
         >
-          <h2 className="text-3xl font-bold mb-4">Making Music Shouldn&apos;t Feel This Overwhelming</h2>
+          <h2 className="text-3xl font-bold mb-4">Making Music Shouldn’t Feel This Overwhelming</h2>
           <p className="text-slate-300">
-            If you&apos;re stuck in creative ruts, battling complex software, or spending hours tweaking tiny details, you&apos;re not alone. Most independent musicians hit the same wall — and too many great ideas die unfinished. There&apos;s a better way.
+            If you are stuck in creative ruts, battling complex software, or spending hours tweaking tiny details, you are not alone. Most independent musicians hit the same wall — and too many great ideas die unfinished. There is a better way.
           </p>
         </section>
 
@@ -113,15 +115,13 @@ export default function Home() {
             </ul>
           </div>
           <p className="mt-6 text-slate-400 text-sm">
-            This isn&apos;t a robot making music for you. It&apos;s a creative amplifier — tuned to your vision, your style, your flow.
+            This isn’t a robot making music for you. It’s a creative amplifier — tuned to your vision, your style, your flow.
           </p>
         </section>
 
         {/* How It Works */}
         <section
           data-aos="fade-up"
-          vedono
-
           className="bg-white/5 backdrop-blur-md rounded-2xl p-8 max-w-3xl text-center shadow-lg py-12 space-y-4"
         >
           <h2 className="text-3xl font-bold mb-6">How It Works</h2>
@@ -143,7 +143,7 @@ export default function Home() {
               </motion.div>
               <div>
                 <span className="font-bold text-indigo-400">Talk to Your AI:</span>
-                <span className="text-slate-300"> Describe the vibe or idea you&apos;re chasing — in plain English.</span>
+                <span className="text-slate-300"> Describe the vibe or idea you are chasing — in plain English.</span>
               </div>
             </li>
             <li className="flex items-start space-x-2">
@@ -196,8 +196,8 @@ export default function Home() {
         >
           <h2 className="text-3xl font-bold mb-6">Built for Musicians. Shaped by Musicians.</h2>
           <div className="space-y-4">
-            <p className="text-slate-300">Our Early Access members aren&apos;t just beta testers — they&apos;re co-creators.</p>
-            <p className="text-slate-300 font-semibold">Here&apos;s what you&apos;ll get as an Early Access member:</p>
+            <p className="text-slate-300">Our Early Access members aren’t just beta testers — they’re co-creators.</p>
+            <p className="text-slate-300 font-semibold">Here’s what you’ll get as an Early Access member:</p>
           </div>
           <ul className="list-disc list-inside space-y-2 text-left mx-auto max-w-md pt-6">
             <li>✅ Be the first to try the AI Assistant Plugin</li>
