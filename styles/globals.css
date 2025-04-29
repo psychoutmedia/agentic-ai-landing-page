@@ -13,18 +13,30 @@
   }
 }
 
-html {
-  background: var(--background);
-  scroll-behavior: smooth;
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
   overflow-x: hidden;
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
   background: var(--background);
   color: var(--foreground);
-  overflow-x: hidden;
-  -webkit-overflow-scrolling: touch;
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  overflow: hidden; /* prevent extra scrolling space */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 2px solid red;
+}
+section {
+  border: 1px dashed yellow;
 }
 
 /* Logo Styling */

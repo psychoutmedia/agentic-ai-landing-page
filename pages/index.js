@@ -29,7 +29,7 @@ export default function Home() {
 </Head>
 
 
-<main className="min-h-screen bg-gradient-to-b from-slate-900 to-slate-800 text-white flex flex-col items-center justify-center px-4 sm:px-6 py-12 overflow-x-hidden space-y-9">
+<main className="min-h-screen bg-gradient-to-b from-slate-900 to-slate-800 text-white flex flex-col items-center justify-center px-4 sm:px-6 py-12 overflow-x-hidden space-y-12">
 
         
         {/* Hero Section */}
