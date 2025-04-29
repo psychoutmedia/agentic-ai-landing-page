@@ -13,15 +13,14 @@
   }
 }
 
-html {
-  background: var(--background);
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
+html, body {
   background: var(--background);
   color: var(--foreground);
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  height: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* Logo Styling */
@@ -29,7 +28,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: -20px 0 10px 0;
+  margin: 1rem 0 1rem 0; /* cleaner spacing under hero text */
   padding: 0;
 }
 
@@ -42,24 +41,22 @@ body {
   transition: transform 0.3s ease;
 }
 
-
 .landing-logo:hover {
   transform: scale(1.06) !important;
 }
 
 @media screen and (max-width: 640px) {
   .landing-logo {
-    width: 180px; /* increase from 140px */
+    width: 180px;
     max-width: 80%;
     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.08));
   }
 
   .logo-wrapper {
-    
-    margin-top: 0.5rem; /* or 0.5rem for tighter fit */
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
   }
 }
-
 
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
