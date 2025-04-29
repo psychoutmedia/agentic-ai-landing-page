@@ -29,10 +29,11 @@ export default function Home() {
 </Head>
 
 
-      <main className="min-h-screen bg-gradient-to-b from-slate-900 to-slate-800 text-white flex flex-col items-center justify-center px-6 py-12 space-y-24">
+<main className="min-h-screen bg-gradient-to-b from-slate-900 to-slate-800 text-white flex flex-col items-center justify-center px-4 sm:px-6 py-12 overflow-x-hidden space-y-24">
+
         
         {/* Hero Section */}
-        <section data-aos="fade-down" className="text-center max-w-4xl space-y-8 py-12">
+        <section data-aos="fade-down" className="text-center max-w-4xl space-y-8 py-12 px-4 sm:px-6 ">
         <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
         Unlock Your Best Tracks{" "}
         <span className="text-indigo-400 whitespace-nowrap">Faster, Smarter, Together.</span>

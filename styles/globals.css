@@ -48,15 +48,16 @@ body {
 
 @media screen and (max-width: 640px) {
   .landing-logo {
-    width: 140px;
-    max-width: 70%;
-    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.05));
+    width: 180px; /* increase from 140px */
+    max-width: 80%;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.08));
   }
 
   .logo-wrapper {
-    margin: -10px 0 4px 0;
+    margin: -6px 0 8px 0; /* increase vertical margin for better spacing */
   }
 }
+
 
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
