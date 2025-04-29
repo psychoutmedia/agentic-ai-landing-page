@@ -1,13 +1,20 @@
 import Head from "next/head";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 
 export default function Home() {
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      console.log("%c🚀 Welcome to Vibe Producer!", "color: #6366f1; font-weight: bold;");
+    }
+  }, []);
   return (
     <>
       <Head>
   <title>Vibe Producer — Unlock Your Best Tracks</title>
   <meta name="description" content="Join the next evolution of music creation. AI that feels like magic." />
+  <meta name="color-scheme" content="dark light"></meta>
   <meta property="og:title" content="Vibe Producer — Unlock Your Best Tracks" />
   <meta property="og:description" content="Join the next evolution of music creation. AI that feels like magic." />
   <meta property="og:url" content="https://vibeproducer.com" />
@@ -33,8 +40,18 @@ export default function Home() {
         <p className="text-lg text-slate-300">
         Meet your new creative partner: an AI assistant built to boost inspiration, streamline production, and help you finish more music — without losing your soul.
         </p>
-        
         </section>
+
+        {/* Logo Divider */}
+        <div className="logo-wrapper" data-aos="fade-up">
+  <img
+    src="/vibe-logo-transparent.png"
+    alt="Vibe Producer Logo"
+    className="landing-logo"
+  />
+</div>
+
+
         {/* Early Access Form */}
 <section className="mt-12 bg-white/5 backdrop-blur-md rounded-2xl p-8 max-w-xl mx-auto text-center shadow-lg" data-aos="fade-up">
   <h3 className="text-2xl font-bold mb-4">Sign Up for Early Access</h3>
