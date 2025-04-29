@@ -14,28 +14,15 @@
   }
 }
 
-/* Essential Reset and Fixes */
-html {
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-  width: 100%;
-  overflow-x: hidden;
-}
-
-body {
+html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  min-height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  -webkit-font-smoothing: antialiased;
+  min-height: 100%;
   font-family: 'Poppins', sans-serif;
   background: var(--background);
   color: var(--foreground);
-  overscroll-behavior: none;
-  position: relative;
+  overflow-x: hidden; /* ✅ No vertical overflow */
 }
 
 /* Fix for mobile Safari double scroll */

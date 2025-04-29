@@ -28,7 +28,7 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
       </Head>
 
-      <main className="min-h-screen w-full flex flex-col items-center justify-start px-4 pt-12 space-y-16">
+      <main className="w-full min-h-screen flex flex-col items-center justify-start px-4 pt-12 space-y-16">
 
       <section data-aos="fade-down" className="text-center w-full max-w-4xl space-y-6 py-10 px-4 sm:px-6">
 
