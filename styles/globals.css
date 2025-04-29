@@ -29,15 +29,12 @@ html, body {
 
 main {
   min-height: 100vh;
-  overflow: hidden; /* prevent extra scrolling space */
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  border: 2px solid red;
 }
-section {
-  border: 1px dashed yellow;
-}
+
 
 /* Logo Styling */
 .logo-wrapper {
