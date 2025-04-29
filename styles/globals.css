@@ -33,7 +33,7 @@ body {
   min-height: 100vh; /* Allow content to expand */
   display: flex;
   flex-direction: column;
-  overflow: hidden; /* Prevent #__next from scrolling */
+  overflow: visible; /* Allow footer to render */
 }
 
 main {
@@ -44,9 +44,17 @@ main {
   overflow: visible; /* Ensure main doesn’t clip content */
 }
 
-/* Ensure sections don’t trigger scrollbars */
+/* Ensure sections and footer are visible */
 section, footer {
   overflow: visible;
+  width: 100%;
+}
+
+/* Footer-specific styling */
+footer {
+  display: block !important;
+  min-height: 100px; /* Ensure footer is visible */
+  padding-bottom: 2rem; /* Extra space at bottom */
 }
 
 /* Responsive padding for mobile */
@@ -58,6 +66,9 @@ section, footer {
   }
   .space-y-16 > :not([hidden]) ~ :not([hidden]) {
     margin-top: 4rem; /* Reduce spacing on mobile */
+  }
+  footer {
+    padding-bottom: 4rem; /* More space on mobile */
   }
 }
 

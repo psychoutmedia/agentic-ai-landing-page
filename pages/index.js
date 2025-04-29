@@ -14,10 +14,11 @@ export default function Home() {
         once: true, // Animations run only once
         duration: 800,
         easing: "ease-out",
-        disable: "mobile", // Disable AOS on mobile to avoid rendering issues
-        offset: 100, // Trigger animations earlier
+        disable: "mobile", // Disable AOS on mobile
+        offset: 200, // Increased offset to trigger animations earlier
       });
       console.log("AOS initialized");
+      console.log("Footer should render below 'Built for Musicians' section");
     }
   }, []);
 
@@ -211,7 +212,7 @@ export default function Home() {
         </section>
 
         {/* Footer */}
-        <footer data-aos="fade-up" className="pt-12 text-center text-sm text-slate-500">
+        <footer className="pt-12 pb-8 text-center text-sm text-slate-500">
           <p>© 2025 AgenticAI Music. All rights reserved.</p>
           <div className="flex justify-center space-x-4 mt-2">
             <a href="#" className="hover:underline">Privacy Policy</a>
