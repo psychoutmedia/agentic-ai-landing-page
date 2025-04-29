@@ -73,16 +73,12 @@ main {
 
 /* Mobile-specific logo tuning */
 @media screen and (max-width: 640px) {
-  .landing-logo {
-    width: 180px;
-    max-width: 80%;
-    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.08));
-  }
-
   .logo-wrapper {
     margin-top: 0.5rem;
+    margin-bottom: 1rem;
   }
 }
+
 
 /* Fade and Glow Animations */
 @keyframes fadeIn {
