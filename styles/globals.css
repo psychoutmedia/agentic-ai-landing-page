@@ -14,26 +14,26 @@
   }
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   font-family: 'Poppins', sans-serif;
   background: var(--background);
   color: var(--foreground);
   overflow-x: hidden;
-  /* 👇 Let body be the ONLY scroll container */
-  overflow-y: auto;
+  overflow-y: auto; /* Body handles scrolling */
   -webkit-font-smoothing: antialiased;
 }
 
 #__next {
+  width: 100%;
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  /* 👇 REMOVE any overflow from here */
-  overflow: unset;
+  overflow: hidden; /* Prevent scrolling in #__next */
 }
 
 main {
@@ -41,8 +41,25 @@ main {
   width: 100%;
   display: flex;
   flex-direction: column;
-  /* 👇 REMOVE this line */
-  /* overflow-y: visible or auto — REMOVE IT */
+  overflow: visible; /* Ensure main doesn’t create a scrollbar */
+}
+
+/* Custom Scrollbar Styling */
+html::-webkit-scrollbar {
+  width: 8px;
+}
+
+html::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #6366f1;
+  border-radius: 4px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: #818cf8;
 }
 
 /* Logo Styling */
@@ -76,11 +93,16 @@ main {
   }
 }
 
-
 /* Fade and Glow Animations */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes pulseGlow {
