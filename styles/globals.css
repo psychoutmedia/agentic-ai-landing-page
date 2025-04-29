@@ -1,11 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 @import "tailwindcss";
 
-/* Universal Box Sizing */
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
+/* Global Root Colors */
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -18,28 +14,38 @@
   }
 }
 
-html, body, #__next, main {
+/* Essential Reset and Fixes */
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: auto !important;
-  overflow-x: hidden !important;
-  overflow-y: auto !important;
-  scroll-behavior: smooth;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
   -webkit-font-smoothing: antialiased;
-  -webkit-overflow-scrolling: touch;
   font-family: 'Poppins', sans-serif;
-  overscroll-behavior-y: contain;
   background: var(--background);
   color: var(--foreground);
+  overscroll-behavior: none;
+  position: relative;
 }
 
+/* Fix for mobile Safari double scroll */
 main {
-  min-height: 100dvh;
-  overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: visible;
+  position: relative;
 }
 
 /* Logo Styling */
@@ -65,6 +71,7 @@ main {
   transform: scale(1.06) !important;
 }
 
+/* Mobile-specific logo tuning */
 @media screen and (max-width: 640px) {
   .landing-logo {
     width: 180px;
@@ -77,7 +84,7 @@ main {
   }
 }
 
-/* Animations */
+/* Fade and Glow Animations */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
